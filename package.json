@@ -1,0 +1,36 @@
+{
+	"name": "recruitment-task",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"build": "webpack --config webpack.config.js --mode production",
+		"start": "npm run build && node server/start.js",
+		"server": "webpack-dev-server --devtool source-map",
+		"test": "jest --env=jest-environment-happy-dom"
+	},
+	"private": true,
+	"license": "ISC",
+	"dependencies": {
+		"get-port": "4.0.0",
+		"koa": "2.5.2",
+		"koa-static": "5.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "7.9.0",
+		"@babel/plugin-transform-runtime": "7.9.0",
+		"@babel/preset-env": "7.9.5",
+		"@babel/register": "7.9.0",
+		"babel-loader": "8.0.6",
+		"babel-polyfill": "6.0.16",
+		"copy-webpack-plugin": "5.1.1",
+		"css-loader": "3.5.3",
+		"html-webpack-plugin": "4.2.0",
+		"jest": "25.4.0",
+		"jest-environment-happy-dom": "0.0.41",
+		"style-loader": "1.2.0",
+		"webpack": "4.43.0",
+		"webpack-cli": "3.3.11",
+		"webpack-dev-server": "3.10.3"
+	}
+}
