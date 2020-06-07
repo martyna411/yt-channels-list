@@ -1,4 +1,4 @@
-### About app
+### About app (WIP: implement shadow DOM)
 
 ---
 
